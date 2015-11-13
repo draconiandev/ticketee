@@ -6,6 +6,7 @@ RSpec.feature "Users can view all projects" do
 
     visit "/"
     click_link "Sublime Text 3"
+
     expect(page.current_url).to eq project_url(project)
   end
 end
